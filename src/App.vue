@@ -15,7 +15,7 @@
     </div>
     <div class="down">
       <div class="left">
-        <div class="leftMenu" v-for="menus in leftMenu">
+        <div class="leftMenu" v-for="menus in leftMenu" @click="toUrl(menus)">
             <i :class="menus.img"></i>
             <span>{{menus.menu}}</span>
         </div>
@@ -40,9 +40,11 @@
       return {
         leftMenu: [
           { menu: '概览' ,
+            pageName: 'survey',
             index: '1',
             img: 'el-icon-view' },
           { menu: '学员管理' ,
+            pageName: 'studentManage',
             index: '2',
             img: 'el-icon-view' },
           { menu: '直播课堂' ,
@@ -86,7 +88,9 @@
 
     },
     methods: {
-
+      toUrl(val){
+        this.$router.replace({name:val.pageName})
+      }
     }
   }
 </script>
@@ -150,6 +154,7 @@
    margin: 20px 20px;
    text-align: center;
    line-height:80px;
+   cursor: pointer;
  }
   .right {
     float: right;
@@ -158,6 +163,9 @@
     height: 100%;
 
   }
+  #studentManage .el-dialog__header {
+   font-size: 20px;
+ }
 
 
 </style>
