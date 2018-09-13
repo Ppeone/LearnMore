@@ -80,7 +80,7 @@
 
     <!--记录-->
     <el-dialog
-      title="提示"
+      :title="studentName"
       :visible.sync="recode"
       width="60%"
       :close-on-click-modal="false">
@@ -170,12 +170,14 @@
         modification: false,
         recode: false,
         tableData1: Array(10).fill(item1),
+        studentName: "",
 
 
       }
     },
     methods:{
       handleClick(val){
+        this.studentName = val.name;
         this.recode = true;
       },
       addStudent(val) {
