@@ -12,7 +12,7 @@
          <el-button class="btn">充值</el-button>
        </div>
      </div>
-      <div class="title"><i class="el-icon-edit"></i>营收情况</div>
+      <div class="title"><i class="el-icon-rank"></i>营收情况</div>
       <div class="def">
         <div class="leftDiv" >
           <p>总收入</p>
@@ -24,7 +24,7 @@
         </div>
       </div>
       <hr>
-      <div class="title"><i class="el-icon-edit"></i>学员统计</div>
+      <div class="title"><i class="el-icon-edit-outline"></i>学员统计</div>
       <div class="def">
         <div class="leftDiv">
           <p>当月新增</p>
