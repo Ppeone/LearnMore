@@ -171,5 +171,9 @@
    font-size: 20px;
  }
 
+ #studentManage .el-form-item__label {
+   font-size: 18px;
+ }
+
 
 </style>
