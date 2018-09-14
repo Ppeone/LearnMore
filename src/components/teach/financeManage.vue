@@ -66,7 +66,7 @@
         <el-button style="width: 150px;font-size: 22px;">总报表</el-button>
         <el-button style="width: 150px;font-size: 22px;">年度报表</el-button>
         <el-button style="width: 150px;font-size: 22px;">月报表</el-button>
-        <el-button style="width: 150px;font-size: 22px;">周表表</el-button>
+        <el-button style="width: 150px;font-size: 22px;">周报表</el-button>
         <span style="font-size: 24px;margin-left: 160px">
           账户余额：234.5元
         </span>
